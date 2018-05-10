@@ -1,36 +1,107 @@
 var Win = 0;
 var Loss = 0;
-var gem1 = Math.floor(Math.random()*11+1);
-var gem2 = Math.floor(Math.random()*11+1);
-var gem3 = Math.floor(Math.random()*11+1);
-var gem4 = Math.floor(Math.random()*11+1);
-
-var countGems = [];
+var gem1 = Math.floor(Math.random()* 11 + 1);
+var gem2 = Math.floor(Math.random()* 11 + 1);
+var gem3 = Math.floor(Math.random()* 11 + 1);
+var gem4 = Math.floor(Math.random()* 11 + 1);
+var randomNumber = Math.floor(Math.random()* 101 + 19);
+var myGems = [];
 var displayWin = document.getElementById("Win");
 var displayLoss = document.getElementById("Loss");
 var displayTarget = document.getElementById("Target");
 var counterNumber = document.getElementById("Counter");
 
 document.addEventListener("DOMContentLoaded", function () {
-
-  document.getElementById("gem1").onclick = function() {
-    countGems.push(gem1);
-    console.log(countGems);
+  var randomNumber = displayTarget;
+ 
+  var totalScore = 0;
+  totalScore = document.getElementById("Counter"); 
+  //how to keep adding to the total score. 
+  //for each time we click a button, add it to the totalScore
+  
+  function addGems (){
+    var totalGems = totalGems + gem1;
   }
-    document.getElementById("gem2").onclick = function(){
-    countGems.push(gem2);
-    console.log(countGems);
-   }
-    document.getElementById("gem3").onclick = function(){
-      countGems.push(gem3);
-      console.log(countGems);
-   }   
-    document.getElementById("gem4").onclick = function(){
-      countGems.push(gem4);
-      console.log(countGems); 
+  document.getElementById("gem1").onclick = function() {
+    console.log(gem1);      
+    totalScore = totalScore + gem1;
+    
+    totalScore.("Counter");//update the 
+    if (totalScore === randomNumber) {
+      Win = Win + 1;
+      //reset randomNumber
     }
+    else if (totalGems > randomNumber) {
+       
+      Lose = Lose + 1;
+      //reset randomNumber
+    }
+  }
 
-});
+    document.getElementById("gem2").onclick = function() {
+      console.log(gem2);
+      totalScore = totalScore + gem2;
+      if (totalGems === randomNumber) {
+        Win = Win + 1;
+        //reset randomNumber
+      }
+      else if (totalGems > randomNumber) {
+        Lose = Lose + 1;
+        //reset randomNumber
+      }
+    }
+    
+      document.getElementById("gem3").onclick = function() {
+        console.log(gem3);
+        
+      totalScore = totalScore + gem3;
+        if (totalGems === randomNumber) {
+          Win = Win + 1;
+          //reset randomNumber
+        }
+        else if (totalGems > randomNumber) {
+          Lose = Lose + 1;
+          //reset randomNumber
+        }
+      }
+        
+      document.getElementById("gem4").onclick = function() {
+        console.log(gem4);
+        
+      totalScore = totalScore + gem4;
+          if (totalGems === randomNumber) {
+            Win = Win + 1;
+            //reset randomNumber
+          }
+          else if (totalGems > randomNumber) {
+            Lose = Lose + 1;
+            //reset randomNumber
+          }
+        }
+      });
+
+  //   myGems.push(gem1);
+  //   console.log(myGems);
+  // }
+  //   document.getElementById("gem2").onclick = function(){
+  //     myGems.push(gem2);
+  //   console.log(myGems);
+  //  }
+  //   document.getElementById("gem3").onclick = function(){
+  //     myGems.push(gem3);
+  //     console.log(myGems);
+  //  }   
+  //   document.getElementById("gem4").onclick = function(){
+  //     myGems.push(gem4);
+  //     console.log(myGems); 
+  //   }
+
+  // function totalGems (total, num){
+  //   console.log(total + number);  
+  //   myGems.reduce(totalGems);
+  //   console.log(totalGems);
+  // }
+
     // alert("Hello World");
     // var targetNumber = Math.floor(Math.random()*101+19);
     // console.log(targetNumber);
@@ -83,21 +154,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //     //   add to the counterNumber
 //     // }
 
-//     // function checkInput (){
-//     //   if getCounter === targetNumber {
-//     //     getWin = getWin + 1;
-//     //     //restart game when player wins
-//     //     getWin = getWin + 1;
-//     //     increaseNumber;
-//     //     getCounter = 0;
-        
-//     //   }
-//     //   else if getCounter >= targetNumber {
-//     //     getLoss = getLoss + 1;
-//     //     //restart game when player wins
-//     //   }
-      
-//     //   }
 
 
 
