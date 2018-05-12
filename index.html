@@ -3,6 +3,7 @@
     <head>
         <title>Crystal Game</title>    
         <!--jQuery library-->
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!--Link JavaScript editor-->
         <script type="text/javascript" src="assets/javascript/game.js"></script>
@@ -32,24 +33,26 @@
             </div>
         </div>
             
-        <div class="container">
+     
             
-            <div class = "row-random">
-                <div class="col-lg-6">
+            <div id = "row-random">
+                    <!--link Random Number Generator id-->
                     Random Number:
                     <p id = "Target"></p> 
-                </div>
+               
+            </div>
                 
-                <div class="col-lg-6">
                     <p>
+                         <!--link total Wins id-->
                         Wins: <p id = "Win"></p>
                     </p>
                     <p>
+                         <!--link total Losses id-->
                         Losses: <p id= "Loss"></p>
                     </p>
                     
                 </div> 
-            </div>
+          
 
             <div id="crystals">
                 <div class="crystal-1">
@@ -79,21 +82,10 @@
             </div>
                 
             <div class="container">
-                <div class = "score">
-                    <div class = "row">
-                        <div class = "col-lg-12">
-                            Your total score is: 
-                            <p id = "Total"></p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
                 <div class = "row">
                     <div class ="col-lg-12">
-                        Score: 
+                        Your Total Score: 
+                        <!--link Counter id-->
                         <p id= "Counter"></p>
 
 
