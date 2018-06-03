@@ -1,23 +1,21 @@
 <!DOCTYPE>
 <html>
     <head>
-        <title>Crystal Game</title>    
+        <title>Crystal Game</title>   
         <!--jQuery library-->
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!--Link JavaScript editor-->
         <script type="text/javascript" src="assets/javascript/game.js"></script>
         <!--Boostrap link-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-        
+        <link rel="stylesheet" type="text/css" href="style.css"> 
     </head>
 
-    <body src="https://www.fg-a.com/wallpapers/white-marble-1-2018.jpg">
+    <body>
 
         <h1>Crystals Collector!</h1>
 
-        <div class = "jumbotron">
-            <div class = "container">
+            <div class = "main">
                 <h2>Instructions:</h2>
                 <p>
                     You will be given a random number at the start of the game.
@@ -31,15 +29,19 @@
                     Each time when the game starts, the game will change the values of each crystal. 
                     </p>
             </div>
-        </div>
+    
             
      
             
-            <div id = "row-random">
-                    <!--link Random Number Generator id-->
-                    Random Number:
+               <!--link Random Number Generator id-->   
+              Random Number: 
+              <div id = "row-random">
+                 
+                 <div class = "container">
+                    
                     <p id = "Target"></p> 
-               
+                </div>
+                             
             </div>
                 
                     <p>
@@ -81,8 +83,9 @@
 
             </div>
                 
-            <div class="container">
+   
                 <div class = "row">
+                    
                     <div class ="col-lg-12">
                         Your Total Score: 
                         <!--link Counter id-->
@@ -91,7 +94,7 @@
 
                     </div>   
                 </div>
-            </div>
+       
             </div>
 
     </body>
